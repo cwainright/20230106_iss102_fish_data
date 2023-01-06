@@ -6,6 +6,7 @@
 #-----Criteria
 # 1) Fish data only
 #-- Species
+#-- Count (n)
 #-- length and weight (if available)
 # 2) Select only "Pinehurst Branch"
 # 3) Select only 20190618 and 20190619 data
