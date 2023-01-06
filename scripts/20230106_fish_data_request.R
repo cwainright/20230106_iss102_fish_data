@@ -87,5 +87,6 @@ df <- dplyr::left_join(df, results_list$tbl_Locations %>% select(Location_ID, Lo
 df <- df %>% select(Fish_Species, Total_Pass_1, Total_Pass_2, Start_Date, Loc_Name)
 df <- df %>% subset(format(as.Date(Start_Date),"%Y")==2019) %>%
     subset(Loc_Name == "Pinehurst Branch")
+df$Start_Date <- format(as.Date(df$Start_Date), "%Y-%m-%d")
 
 data.table::fwrite(df, "data/20230106_data_request.csv")
